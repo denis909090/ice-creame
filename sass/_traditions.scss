@@ -1,0 +1,177 @@
+.traditions {
+    background-color: #84A178;
+    padding: 60px 0 178px 0; 
+    position: relative;
+}
+
+.title-tradition {
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.second-title {
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.16px;
+    text-transform: uppercase;
+    margin-bottom: 82px;
+}
+
+.block-kow {
+    width: 490px;
+    height: 490px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;
+    box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url(../image/cow.png);
+        width: 490px;
+        height: 490px;
+        position: absolute;
+        top: 39px;
+        left: 0;
+    }
+}
+
+.ice-descrp {
+    color: #FCFCFC;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.64px;
+    margin-top: 90px;
+    margin-bottom: 8px;
+    max-width: 463px;
+}
+
+.traditional-descrp {
+    color: #FCFCFC;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 194%;
+    letter-spacing: 0.56px;
+    margin-bottom: 54px;
+    max-width: 463px;
+}
+
+.tradition-btn {
+    padding: 12px 34px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #000;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    border: none;
+}
+
+.presentation {
+    display: flex;
+    justify-content: left;
+    gap: 110px;
+}
+
+.icon-blocks {
+    margin-top: 106px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.block-icon-cow {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F8D24E;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.number {
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.32px;
+    margin-bottom: 12px;
+}
+
+.title-block-icon-cow {
+    color: #FCFCFC;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.32px;
+}
+
+.block-icon-dembbell {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-icon-ice {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    border-radius: 24px;
+}
+
+.img-block {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 77px;
+}

@@ -1,0 +1,133 @@
+.footer {
+    background-color: $bacgroundcolorsection;
+    // height: 1000px;
+    padding-top: 474px;
+}
+
+.btn-locations {
+    padding: 12px 40px;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    margin-right: 16px;
+
+    &:hover {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        background-color: #0A8817;
+        color: #fff;
+        fill: #fff;
+    }
+}
+
+.btn-franchise {
+    padding: 9.5px 52px;
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    background-color: transparent;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+
+    &:hover {
+        border: 2px solid #0A8817;
+    }
+}
+
+.btns-contacts {
+    text-align: center;
+}
+
+.made-ice-creame {
+    margin-top: 120px;
+    max-width: 504px;
+
+    .made-ice-creame__first {
+        color: #FCFCFC;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+
+    .made-ice-creame__second {
+        color: #FCFCFC;
+        font-family: Montserrat;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.48px;
+        text-transform: uppercase;
+    }
+}
+
+.footer-main-block {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    gap: 30px;
+    display: inline-flex;
+    justify-content: end;
+    margin-bottom: 40px;
+    margin-top: 18px;
+}
+
+.social-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer-contacts__phone {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+    text-decoration: none;
+
+    &:hover {
+        color: #F8D24E;
+    }
+}
+
+.footer-contacts__descrp {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+}
+
+.security-block {
+    border-top: 1px solid #E1E1E1;
+    padding: 12px 0;
+
+    .security {
+        color: #7A7A7A;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 186%;
+        letter-spacing: 0.24px;
+        text-align: center;
+    }
+}

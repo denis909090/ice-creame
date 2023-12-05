@@ -1,0 +1,124 @@
+.hero {
+    background-color: #84a178;
+}
+
+.hero-conteiner {
+    display: flex;
+
+    background-image: url(/image/Крапки.png);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.title-p {
+    padding-top: 45px;
+}
+
+.title {
+    margin-right: auto;
+}
+
+.btn-hero {
+    color: #131313;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 12px 34px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: 3px solid #F8D24E;
+}
+
+.btn-link-hero {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.link-hero {
+    color: #F8D24E;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    padding: 12px 22px;
+    border: none;
+    background-color: transparent;
+
+    transition: color 250ms ease;
+
+    &:hover {
+        color: #0A8817;
+    }
+}
+
+.pescture {
+    display: flex;
+    gap: 16px;
+
+    margin-top: 42px;
+}
+
+.descrp-ice {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 200px;
+    padding-top: 67px;
+    padding-bottom: 24px;
+}
+
+
+
+.price-ice {
+    display: flex;
+}
+
+.price-title {
+    text-align: end;
+    margin-top: 53px;
+}
+
+.first-pr {
+    margin-bottom: 16px;
+}
+
+.price {
+    color: #131313;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
+
+    margin-bottom: 4px;
+}
+
+.name {
+    color: #FCFCFC;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.big-peacture {
+    padding-top: 31px;
+}
