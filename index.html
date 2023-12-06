@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="conteiner header-conteiner">
             <div class="logo">
-                <svg width="60" height="65">
+                <svg class="icon-logo">
                     <use href="./image/spite.svg#icon-Logo"></use>
                 </svg>
             </div>
@@ -37,6 +37,14 @@
                     <a href="" class="nav-link">Contact</a>
                 </nav>
             </div>
+
+            <button class="btn-burger" is-open>
+                <svg class="burger-menu" width="32" height="32">
+                    <use class="open-icon" href="./image/spite.svg#icon-open-burger"></use>
+                    <use class="close-icon" href="./image/spite.svg#icon-close-burger"></use>
+                </svg>
+            </button>
+
             <button class="btn">
                 Buy now
                 <svg class="btn-svg" width="12" height="12">
@@ -44,84 +52,95 @@
                 </svg>
             </button>
         </div>
-    </header>
+    </header> -->
     <main>
-        <section class="hero">
+        <section class=" hero">
             <div class="conteiner hero-conteiner">
-                <div class="title">
-                    <h2 class="title-p">ice cream made with passion</h2>
-                    <div class="btn-link-hero">
-                        <button class="btn-hero">Products</button>
-                        <button class="link-hero">How it’s made?</button>
-                    </div>
+                <div class="block-hero">
+                    <div class="title">
+                        <h2 class="title-p">ice cream made with <span class="content-paragraph">passion</span></h2>
+                        <div class="btn-link-hero">
+                            <button class="btn-hero">Products</button>
+                            <button class="link-hero">How it’s made?</button>
+                        </div>
 
-                    <div class="pescture">
-                        <img src="./image/много мороженок 1 (1).png" alt="шарики морозива">
-                        <div class="descrp-ice-creame">
-                            <p class="descrp-ice">Indulge in a scoop of ice cream made with passion and treat your taste
-                                buds to an unforgettable experience!</p>
-                            <svg width="40" height="16">
-                                <use href="./image/spite.svg#icon-strelka"></use>
-                            </svg>
+                        <div class="picrure-descrp">
+                            <img src="./image/много мороженок 1 (1).png" alt="шарики морозива">
+                            <div class="descrp-ice-creame">
+                                <p class="descrp-ice">Indulge in a scoop of ice cream made with passion and
+                                    treat your taste
+                                    buds to an unforgettable experience!</p>
+                                <svg width="40" height="16">
+                                    <use href="./image/spite.svg#icon-strelka"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-ice">
+                        <img class="big-peacture" src="./image/mobile.png" alt="">
+                        <div class="price-title">
+                            <div class="first-pr">
+                                <p class="price">16</p>
+                                <p class="name">cafes</p>
+                            </div>
+                            <div class="second-pr">
+                                <p class="price">23</p>
+                                <p class="name">food trucks</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="price-ice">
-                    <img class="big-peacture" src="./image/desktop.png" alt="">
-                    <div class="price-title">
-                        <div class="first-pr">
-                            <p class="price">16</p>
-                            <p class="name">cafes</p>
-                        </div>
-                        <div class="second-pr">
-                            <p class="price">23</p>
-                            <p class="name">food trucks</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <section class="produst">
-            <div class="prd conteiner">
+        <!--        <section class="produst">
+            <div class="conteiner">
                 <div class="products">
                     <h4 class="title-products">100% natural</h4>
                     <p class="name-section">products</p>
-                    <div class="products-block">
-                        <div class="ice-creame-block">
-                            <h4 class="title-block">ice cream</h4>
-                            <p class="descrp-block">Soft ice cream with a delicate taste.
-                                Made with milk, cream, sugar and natural
-                                stabilizer</p>
-                            <svg class="icon-strelka" width="40" height="16">
-                                <use href="./image/spite.svg#icon-strelka"></use>
-                            </svg>
-                        </div>
-                        <div class="ice-coffee-block">
-                            <h4 class="title-block">ice-coffee</h4>
-                            <p class="descrp-block">Fragrant invigorating drink created from 100% natural
-                                ingredients without the
-                                use of preservatives
-                                and flavor enhancers</p>
-                            <svg class="icon-strelka" width="40" height="16">
-                                <use href="./image/spite.svg#icon-strelka"></use>
-                            </svg>
-                        </div>
-                        <div class="milkshakes">
-                            <h4 class="title-block">ice-coffee</h4>
-                            <p class="descrp-block">Fragrant invigorating drink created from 100% natural
-                                ingredients without the
-                                use of preservatives
-                                and flavor enhancers</p>
-                            <svg class="icon-strelka" width="40" height="16">
-                                <use href="./image/spite.svg#icon-strelka"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <ul class="products-block-item">
+                        <li>
+                            <div class="ice-creame-block">
+                                <h4 class="title-block">ice cream</h4>
+                                <p class="descrp-block">Soft ice cream with a delicate taste.
+                                    Made with milk, cream, sugar and natural
+                                    stabilizer</p>
+                                <svg class="icon-strelka" width="40" height="16">
+                                    <use href="./image/spite.svg#icon-strelka"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ice-coffee-block">
+                                <h4 class="title-block">ice-coffee</h4>
+                                <p class="descrp-block">Fragrant invigorating drink created from 100%
+                                    natural
+                                    ingredients without the
+                                    use of preservatives
+                                    and flavor enhancers</p>
+                                <svg class="icon-strelka" width="40" height="16">
+                                    <use href="./image/spite.svg#icon-strelka"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="milkshakes">
+                                <h4 class="title-block">ice-coffee</h4>
+                                <p class="descrp-block">Fragrant invigorating drink created from 100%
+                                    natural
+                                    ingredients without the
+                                    use of preservatives
+                                    and flavor enhancers</p>
+                                <svg class="icon-strelka" width="40" height="16">
+                                    <use href="./image/spite.svg#icon-strelka"></use>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+
+
                 </div>
-
-
+            </div>
             </div>
         </section>
 
@@ -345,7 +364,7 @@
         <div class="security-block">
             <p class="security">&#169; 2022 - IceCream. All Rights Reserved. </p>
         </div>
-    </footer>
+    </footer> --!>
 </body>
 
 </html>

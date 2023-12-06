@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     gap: 28px;
-    padding: 32px 205px 12px 0;
+    padding: 32px 0 12px 0;
 
     & .nav-link:hover {
         color: #F8D24E;
@@ -20,6 +20,10 @@
 
     & .nav-link:focus {
         color: #FFF;
+    }
+
+    @media screen and (max-width:1200px) {
+        display: none;
     }
 }
 
@@ -39,19 +43,18 @@
     background-color: #F8D24E;
     color: #000;
     font-family: "Montserrat";
-
-    text-align: center;
     font-style: normal;
     line-height: normal;
     border: none;
     font-size: 14px;
     font-weight: 600;
     padding: 12px 35px 12px 36px;
-    margin-top: 20px;
+    margin-top: 0;
     border-radius: 10px;
     height: 42px;
 
     display: flex;
+    text-align: center;
     align-items: center;
     gap: 4px;
 
@@ -62,32 +65,75 @@
         cursor: pointer;
     }
 
-    &:focus {
+    // &:focus {
+    //     color: #FFF;
+    //     background: #0a8817;
+    //     fill: #fff;
+    // }
+
+    &:active {
         color: #FFF;
         background: #0a8817;
+        fill: #fff;
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (max-width:1199px) {
+        margin-left: 32px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 20px;
+    }
+}
+
+.btn-burger {
+    background-color: transparent;
+    margin-left: auto;
+
+    & .burger-menu {
+        fill: #fff;
+    }
+
+    & .burger-menu .close-icon {
+        display: none;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: none;
     }
 }
 
 .header-navigation {
     display: flex;
     gap: 200px;
+    flex-grow: 1;
 
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
+
+.icon-logo {
+    width: 40px;
+    height: 37px;
+
+    @media screen and (min-width:480px) {
+        width: 48px;
+        height: 44px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 60px;
+        height: 65px;
+    }
 }
 
 .logo {
-    margin-right: 280px;
+    display: flex;
+    flex-grow: 2;
     fill: #F8D24E;
-}
-
-.title-p {
-    color: #FCFCFC;
-    font-family: "Seymour One";
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.52px;
-    text-transform: uppercase;
-
-    width: 367px;
 }
