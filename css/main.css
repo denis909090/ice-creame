@@ -957,6 +957,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-top: 1000px;
 }
 
 .review-section {
@@ -1016,6 +1017,11 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 32px;
 }
 
@@ -1025,11 +1031,10 @@ h6 {
 }
 
 .table {
-  padding: 40px;
+  padding: 40px 32px 24px;
   text-align: start;
   display: block;
-  max-width: 368px;
-  max-height: 542px;
+  max-width: 280px;
   border-radius: 24px;
   background: #FFF;
   -webkit-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
@@ -1037,18 +1042,19 @@ h6 {
 }
 
 .title-table {
-  color: #131313;
-  border-radius: 6px;
-  padding: 4px 14px;
+  display: inline-block;
   background-color: #F8D24E;
-  text-align: start;
+  padding: 4px 14px;
+  border-radius: 6px;
+  color: #131313;
+  text-align: center;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
-  letter-spacing: 0.64px;
-  margin-bottom: 32px;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  margin-bottom: 20px;
 }
 
 .city {
@@ -1057,7 +1063,7 @@ h6 {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%;
+  line-height: 183%;
   letter-spacing: 0.64px;
   margin-bottom: 8px;
 }
@@ -1065,27 +1071,27 @@ h6 {
 .link-address {
   color: #D6936D;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 183%;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.48px;
 }
 
 .first-block,
 .second-block {
   border-bottom: 1px solid #E1E1E1;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 
 .second-block {
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .days {
   color: #131313;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 186%;
@@ -1095,30 +1101,116 @@ h6 {
 .time {
   color: #ABABAB;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 186%;
 }
 
 .second-plan {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .contacts-block {
-  margin-top: 32px;
+  margin-top: 24px;
   color: #131313;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .mail {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .title-table {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 140%;
+    letter-spacing: 0.64px;
+  }
+  .city {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.64px;
+    margin-bottom: 8px;
+  }
+  .link-address {
+    color: #D6936D;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.56px;
+  }
+  .first-block,
+  .second-block {
+    padding-bottom: 32px;
+  }
+  .second-block {
+    margin-top: 32px;
+  }
+  .city {
+    font-size: 14px;
+  }
+  .time {
+    font-size: 14px;
+  }
+  .contacts-block {
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .mail {
+    margin-top: 4px;
+  }
+  .table {
+    padding: 40px 24px;
+    max-width: 224px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .city {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-address {
+    color: #D6936D;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.64px;
+    text-decoration-line: underline;
+  }
+  .city {
+    font-size: 16px;
+  }
+  .time {
+    font-size: 16px;
+  }
+  .second-plan {
+    margin-top: 12px;
+  }
+  .contacts-block {
+    font-size: 16px;
+  }
+  .table {
+    padding: 40px;
+    max-width: 368px;
+  }
+}
 .footer {
   background-color: #84A178;
   padding-top: 474px;
