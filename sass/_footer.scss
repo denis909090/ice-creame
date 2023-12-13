@@ -7,7 +7,16 @@
     padding: 12px 40px;
     background-color: #F8D24E;
     border-radius: 10px;
-    margin-right: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
 
     &:hover {
         background-color: #0A8817;
@@ -21,68 +30,151 @@
 }
 
 .btn-franchise {
-    padding: 9.5px 52px;
-    color: #131313;
-    text-align: center;
-    font-family: Montserrat;
+    padding: 10px 55px;
     background-color: transparent;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
+
 
     &:hover {
         border: 2px solid #0A8817;
     }
 }
 
+.btn-svg {
+    margin-left: 5px;
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
 .btns-contacts {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
-.made-ice-creame {
-    margin-top: 120px;
-    max-width: 504px;
+@media screen and (min-width:768px) {
+    .btns-contacts {
+        flex-direction: row;
 
-    .made-ice-creame__first {
-        color: #FCFCFC;
-        font-family: Montserrat;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-        margin-bottom: 14px;
     }
+}
 
-    .made-ice-creame__second {
-        color: #FCFCFC;
-        font-family: Montserrat;
+.with-descrp-ice-creame {
+    color: #FCFCFC;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width:768px) {
+    .with-descrp-ice-creame {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .with-descrp-ice-creame {
         font-size: 58px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 3.48px;
-        text-transform: uppercase;
     }
 }
+
+
+.made-descrp-ice-creame {
+    margin-top: 60px;
+
+    @media screen and (min-width:768px) {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        letter-spacing: 1.02px;
+        font-weight: 400;
+    }
+}
+
 
 .footer-main-block {
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
+    // flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .footer-main-block {
+        flex-direction: row;
+    }
+}
+
+.made-ice-creame {
+    width: 250px;
+}
+
+.with-ice-creame {
+    max-width: 200px;
+}
+
+@media screen and (min-width:768px) {
+    .made-ice-creame {
+        width: 352px;
+    }
+
+    .with-ice-creame {
+        max-width: 352px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .made-ice-creame {
+        width: 504px;
+    }
+
+    .with-ice-creame {
+        max-width: 497px;
+    }
 }
 
 .social-link {
-    gap: 30px;
+    gap: 20px;
     display: inline-flex;
     justify-content: end;
-    margin-bottom: 40px;
-    margin-top: 18px;
+    padding-bottom: 40px;
+    padding-top: 18px;
 }
+
+@media screen and (min-width:768px) {
+    .social-link {
+        gap: 30px;
+    }
+}
+
+// @media screen and (min-width:) {
+
+// }
 
 .social-contact {
     display: flex;
@@ -91,14 +183,12 @@
 }
 
 .footer-contacts__phone {
-    color: #FFF;
+    color: #FCFCFC;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 186%;
-    letter-spacing: 0.32px;
-    text-decoration: none;
 
     &:hover {
         color: #F8D24E;
@@ -107,26 +197,134 @@
 
 .footer-contacts__descrp {
     color: #131313;
+    text-align: right;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 700;
     line-height: 186%;
-    letter-spacing: 0.32px;
+}
+
+@media screen and (min-width:480px) {
+    .footer-contacts__descrp {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .footer-contacts__phone {
+        color: #FCFCFC;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 186%;
+    }
+
+    .footer-contacts__descrp {
+        color: #131313;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 186%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-contacts__phone {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 186%;
+        letter-spacing: 0.32px;
+    }
+
+    .footer-contacts__descrp {
+        color: #131313;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 186%;
+        letter-spacing: 0.32px;
+    }
 }
 
 .security-block {
     border-top: 1px solid #E1E1E1;
-    padding: 12px 0;
+    padding: 20px 0 14px 0;
+}
 
+@media screen and (min-width:768px) {
+    .security-block {
+        padding: 12px 0;
+    }
+}
+
+.security {
+    color: #7A7A7A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 152%;
+
+    display: block;
+    width: 147px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width:768px) {
     .security {
-        color: #7A7A7A;
-        font-family: Montserrat;
+        width: 298px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .security {
         font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
         line-height: 186%;
         letter-spacing: 0.24px;
-        text-align: center;
+
+        width: 255px;
+    }
+}
+
+.made-descrp-ice-creame {
+    color: #FCFCFC;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width:768px) {
+    .made-descrp-ice-creame {
+        margin-top: 40px;
+
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1.04px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .made-descrp-ice-creame {
+        margin-top: 120px;
+
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
     }
 }

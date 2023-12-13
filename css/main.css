@@ -1,31 +1,25 @@
 @charset "UTF-8";
 .conteiner {
+  width: 280px;
   padding: 0 20px;
   margin: 0 auto;
 }
-@media screen and (min-width: 320px) {
-  .conteiner {
-    width: 280px;
-    padding: 0;
-  }
-}
+
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 440px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 720px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
     width: 1200px;
-    padding: 0 16px;
   }
 }
-
 /*Обнуление*/
 * {
   padding: 0;
@@ -276,10 +270,11 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../image/Крапки-mobile.png);
+  background-image: url(../image/Крапки-mobile-320.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 320px;
+  position: relative;
 }
 
 .title-p {
@@ -343,6 +338,11 @@ h6 {
 
 .title {
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .title {
+    padding-bottom: 150px;
+  }
 }
 
 .btn-hero {
@@ -496,6 +496,14 @@ h6 {
   .big-peacture {
     padding-right: 7px;
     padding-top: 19px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .big-peacture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 0;
   }
 }
 
@@ -1120,7 +1128,19 @@ h6 {
   padding: 12px 40px;
   background-color: #F8D24E;
   border-radius: 10px;
-  margin-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
 }
 .btn-locations:hover {
   background-color: #0A8817;
@@ -1132,13 +1152,19 @@ h6 {
 }
 
 .btn-franchise {
-  padding: 9.5px 52px;
-  color: #131313;
-  text-align: center;
-  font-family: Montserrat;
+  padding: 10px 55px;
   background-color: transparent;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -1148,34 +1174,76 @@ h6 {
   border: 2px solid #0A8817;
 }
 
-.btns-contacts {
-  text-align: center;
+.btn-svg {
+  margin-left: 5px;
+  display: block;
+  width: 12px;
+  height: 12px;
 }
 
-.made-ice-creame {
-  margin-top: 120px;
-  max-width: 504px;
+.btns-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
 }
-.made-ice-creame .made-ice-creame__first {
+
+@media screen and (min-width: 768px) {
+  .btns-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.with-descrp-ice-creame {
   color: #FCFCFC;
   font-family: Montserrat;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-.made-ice-creame .made-ice-creame__second {
-  color: #FCFCFC;
-  font-family: Montserrat;
-  font-size: 58px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 3.48px;
+  letter-spacing: 1.36px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .with-descrp-ice-creame {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .with-descrp-ice-creame {
+    font-size: 58px;
+  }
+}
+.made-descrp-ice-creame {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .made-descrp-ice-creame {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made-descrp-ice-creame {
+    font-size: 30px;
+    letter-spacing: 1.02px;
+    font-weight: 400;
+  }
 }
 
 .footer-main-block {
@@ -1186,20 +1254,61 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-main-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.made-ice-creame {
+  width: 250px;
+}
+
+.with-ice-creame {
+  max-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .made-ice-creame {
+    width: 352px;
+  }
+  .with-ice-creame {
+    max-width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made-ice-creame {
+    width: 504px;
+  }
+  .with-ice-creame {
+    max-width: 497px;
+  }
+}
 .social-link {
-  gap: 30px;
+  gap: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-bottom: 40px;
-  margin-top: 18px;
+  padding-bottom: 40px;
+  padding-top: 18px;
 }
 
+@media screen and (min-width: 768px) {
+  .social-link {
+    gap: 30px;
+  }
+}
 .social-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1214,14 +1323,12 @@ h6 {
 }
 
 .footer-contacts__phone {
-  color: #FFF;
+  color: #FCFCFC;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 186%;
-  letter-spacing: 0.32px;
-  text-decoration: none;
 }
 .footer-contacts__phone:hover {
   color: #F8D24E;
@@ -1229,25 +1336,121 @@ h6 {
 
 .footer-contacts__descrp {
   color: #131313;
+  text-align: right;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 700;
   line-height: 186%;
-  letter-spacing: 0.32px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-contacts__descrp {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-contacts__phone {
+    color: #FCFCFC;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+  }
+  .footer-contacts__descrp {
+    color: #131313;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts__phone {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+  }
+  .footer-contacts__descrp {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+  }
+}
 .security-block {
   border-top: 1px solid #E1E1E1;
-  padding: 12px 0;
+  padding: 20px 0 14px 0;
 }
-.security-block .security {
+
+@media screen and (min-width: 768px) {
+  .security-block {
+    padding: 12px 0;
+  }
+}
+.security {
   color: #7A7A7A;
+  text-align: center;
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 186%;
-  letter-spacing: 0.24px;
+  line-height: 152%;
+  display: block;
+  width: 147px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .security {
+    width: 298px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .security {
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.24px;
+    width: 255px;
+  }
+}
+.made-descrp-ice-creame {
+  color: #FCFCFC;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .made-descrp-ice-creame {
+    margin-top: 40px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.04px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made-descrp-ice-creame {
+    margin-top: 120px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
 }/*# sourceMappingURL=main.css.map */
