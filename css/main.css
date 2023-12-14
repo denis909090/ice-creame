@@ -1075,6 +1075,8 @@ h6 {
   font-weight: 500;
   line-height: 183%;
   letter-spacing: 0.48px;
+  display: block;
+  width: 212px;
 }
 
 .first-block,
@@ -1150,6 +1152,7 @@ h6 {
     font-weight: 500;
     line-height: 183%;
     letter-spacing: 0.56px;
+    width: 158px;
   }
   .first-block,
   .second-block {
@@ -1174,7 +1177,6 @@ h6 {
   }
   .table {
     padding: 40px 24px;
-    max-width: 224px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1192,6 +1194,7 @@ h6 {
     line-height: 183%;
     letter-spacing: 0.64px;
     text-decoration-line: underline;
+    width: 288px;
   }
   .city {
     font-size: 16px;
@@ -1207,7 +1210,6 @@ h6 {
   }
   .table {
     padding: 40px;
-    max-width: 368px;
   }
 }
 .footer {

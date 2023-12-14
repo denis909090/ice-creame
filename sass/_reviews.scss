@@ -79,7 +79,7 @@
     padding: 40px 32px 24px;
     text-align: start;
     display: block;
-    // max-width: 280px;
+    // width: 280px;
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
@@ -121,6 +121,9 @@
     font-weight: 500;
     line-height: 183%;
     letter-spacing: 0.48px;
+
+    display: block;
+    width: 212px;
 }
 
 .first-block,
@@ -203,6 +206,8 @@
         font-weight: 500;
         line-height: 183%;
         letter-spacing: 0.56px;
+
+        width: 158px;
     }
 
     .first-block,
@@ -234,7 +239,7 @@
 
     .table {
         padding: 40px 24px;
-        max-width: 224px;
+        // width: 224px;
     }
 }
 
@@ -254,6 +259,8 @@
         line-height: 183%;
         letter-spacing: 0.64px;
         text-decoration-line: underline;
+
+        width: 288px;
     }
 
     .city {
@@ -274,6 +281,6 @@
 
     .table {
         padding: 40px;
-        max-width: 368px;
+        // width: 368px;
     }
 }
