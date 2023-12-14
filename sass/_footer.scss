@@ -1,6 +1,7 @@
 .footer {
     background-color: $bacgroundcolorsection;
-    padding-top: 474px;
+    padding-top: 976px;
+    position: relative;
 }
 
 .btn-locations {
@@ -45,7 +46,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
-
 
     &:hover {
         border: 2px solid #0A8817;
@@ -120,7 +120,6 @@
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -171,10 +170,6 @@
         gap: 30px;
     }
 }
-
-// @media screen and (min-width:) {
-
-// }
 
 .social-contact {
     display: flex;
@@ -326,5 +321,292 @@
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 1.2px;
+    }
+}
+
+.contacts {
+    position: absolute;
+    top: -353px;
+}
+
+.block-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.table {
+    padding: 40px 32px 24px;
+    text-align: start;
+    display: block;
+    width: 280px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+}
+
+.title-table {
+    display: inline-block;
+    background-color: #F8D24E;
+    padding: 4px 22px;
+    border-radius: 6px;
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    margin-bottom: 20px;
+}
+
+
+.city {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.64px;
+    margin-bottom: 8px;
+}
+
+.link-address {
+    color: #D6936D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.48px;
+
+    display: block;
+    width: 212px;
+}
+
+.first-block,
+.second-block {
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 24px;
+}
+
+.second-block {
+    margin-top: 24px;
+}
+
+.days {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.64px;
+}
+
+.time {
+    color: #ABABAB;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+}
+
+
+.second-plan {
+    margin-top: 8px;
+}
+
+.contacts-block {
+    margin-top: 24px;
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.mail {
+    margin-top: 6px;
+}
+
+@media screen and (min-width:480px) {
+    .contacts {
+        top: -350px;
+    }
+
+    // .footer {
+    //     padding-top: 944px;
+    // }
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        padding-top: 278px;
+    }
+
+    .block-footer {
+        align-items: normal;
+    }
+
+    .cards-list {
+        flex-direction: row;
+    }
+
+    .contacts {
+        top: -300px;
+
+        gap: 28px;
+    }
+
+    .review {
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 186%;
+        letter-spacing: 0.56px;
+    }
+
+    .title-table {
+        margin-bottom: 32px;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 140%;
+        letter-spacing: 0.64px;
+    }
+
+    .city {
+        color: #131313;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 186%;
+        letter-spacing: 0.64px;
+        margin-bottom: 8px;
+    }
+
+    .link-address {
+        color: #D6936D;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 183%;
+        letter-spacing: 0.56px;
+
+        width: 158px;
+    }
+
+    .first-block,
+    .second-block {
+        padding-bottom: 32px;
+    }
+
+    .second-block {
+        margin-top: 32px;
+    }
+
+    .city {
+        font-size: 14px;
+    }
+
+    .time {
+        font-size: 14px;
+    }
+
+    .contacts-block {
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .mail {
+        margin-top: 4px;
+    }
+
+    .table {
+        padding: 40px 24px;
+        width: 224px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .city {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer {
+        padding-top: 474px;
+    }
+
+    .contacts {
+        top: -128px;
+    }
+
+    .review {
+        color: #FCFCFC;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 186%;
+        letter-spacing: 0.64px;
+    }
+
+    .link-address {
+        color: #D6936D;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 183%;
+        letter-spacing: 0.64px;
+        text-decoration-line: underline;
+
+        width: 288px;
+    }
+
+    .city {
+        font-size: 16px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .second-plan {
+        margin-top: 12px;
+    }
+
+    .first-block {
+        width: 288px;
+    }
+
+    .contacts-block {
+        font-size: 16px;
+    }
+
+    .table {
+        padding: 40px;
+        width: 368px;
+    }
+
+    .cards-list {
+        gap: 30px;
     }
 }
