@@ -1,23 +1,23 @@
 @charset "UTF-8";
 .conteiner {
-  width: 280px;
+  max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 /*Обнуление*/
@@ -1055,7 +1055,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1334,10 +1333,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 16px;
 }
 
@@ -1460,7 +1458,6 @@ h6 {
   }
   .contacts {
     top: -300px;
-    gap: 28px;
   }
   .review {
     text-align: center;
@@ -1575,6 +1572,6 @@ h6 {
     width: 368px;
   }
   .cards-list {
-    gap: 30px;
+    gap: 28px;
   }
 }/*# sourceMappingURL=main.css.map */

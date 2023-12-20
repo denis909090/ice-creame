@@ -65,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    // gap: 16px;
 }
 
 @media screen and (min-width:768px) {
@@ -337,7 +337,8 @@
 
 .cards-list {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    // flex-direction: column;
 
     gap: 16px;
 }
@@ -467,7 +468,7 @@
     .contacts {
         top: -300px;
 
-        gap: 28px;
+        // gap: 28px;
     }
 
     .review {
@@ -607,6 +608,6 @@
     }
 
     .cards-list {
-        gap: 30px;
+        gap: 28px;
     }
 }
