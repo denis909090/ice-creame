@@ -12,12 +12,12 @@
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    max-width: 808px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    max-width: 1240px;
   }
 }
 /*Обнуление*/
@@ -507,10 +507,10 @@ h6 {
   }
 }
 
-.products {
+.produsts {
   padding: 60px 0;
-  background-image: url(../image/Frame.jpg);
-  background-position: center;
+  background-image: url(../image/background-section.jpg);
+  background-size: contain;
 }
 
 .title-products {
@@ -578,9 +578,13 @@ h6 {
   display: block;
   margin: 100px auto 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .icon-strelka {
+    margin: 106px auto 0 auto;
+  }
+}
 
 .ice-coffee-block {
-  padding: 124px 40px 16px 40px;
   border-radius: 24px;
   background: #EFD478;
   position: relative;
@@ -606,7 +610,15 @@ h6 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(../image/ice-coffee.jpg);
+  background-image: url(../image/ice-coffee.webp);
+}
+@media screen and (min-width: 480px) {
+  .ice-coffee-block::before {
+    left: 60px;
+  }
+  .ice-coffee-block::after {
+    left: 60px;
+  }
 }
 
 .ice-creame-block {
@@ -636,13 +648,20 @@ h6 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(../image/ice-cream.png);
+  background-image: url(../image/ice-creame.webp);
+}
+@media screen and (min-width: 480px) {
+  .ice-creame-block::before {
+    left: 60px;
+  }
+  .ice-creame-block::after {
+    left: 60px;
+  }
 }
 
 .milkshakes {
-  padding: 124px 40px 16px 40px;
   border-radius: 24px;
-  background: #AEC6A5;
+  background: #D6936D;
   position: relative;
 }
 .milkshakes::before {
@@ -666,7 +685,34 @@ h6 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(../image/milkshakes.jpg);
+  background-image: url(../image/milkshake.webp);
+}
+@media screen and (min-width: 480px) {
+  .milkshakes::before {
+    left: 60px;
+  }
+  .milkshakes::after {
+    left: 60px;
+  }
+}
+
+.block-products {
+  padding: 124px 40px 16px;
+}
+@media screen and (min-width: 480px) {
+  .block-products {
+    padding: 124px 60px 16px;
+    max-width: 320px;
+  }
+}
+
+.list-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .traditions {

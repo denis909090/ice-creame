@@ -1,11 +1,9 @@
 // .conteiner {}
 
-.products {
+.produsts {
     padding: 60px 0;
-    background-image: url(../image/Frame.jpg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../image/background-section.jpg);
+    background-size: contain;
 }
 
 .title-products {
@@ -70,10 +68,13 @@
     fill: #131313;
     display: block;
     margin: 100px auto 0 auto;
+
+    @media screen and (min-width:480px) {
+        margin: 106px auto 0 auto;
+    }
 }
 
 .ice-coffee-block {
-    padding: 124px 40px 16px 40px;
     border-radius: 24px;
     background: #EFD478;
 
@@ -99,7 +100,17 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-image: url(../image/ice-coffee.jpg);
+        background-image: url(../image/ice-coffee.webp);
+    }
+
+    @media screen and (min-width:480px) {
+        &::before {
+            left: 60px;
+        }
+
+        &::after {
+            left: 60px;
+        }
     }
 }
 
@@ -131,14 +142,23 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-image: url(../image/ice-cream.png);
+        background-image: url(../image/ice-creame.webp);
+    }
+
+    @media screen and (min-width:480px) {
+        &::before {
+            left: 60px;
+        }
+
+        &::after {
+            left: 60px;
+        }
     }
 }
 
 .milkshakes {
-    padding: 124px 40px 16px 40px;
     border-radius: 24px;
-    background: #AEC6A5;
+    background: #D6936D;
 
     position: relative;
 
@@ -163,6 +183,30 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-image: url(../image/milkshakes.jpg);
+        background-image: url(../image/milkshake.webp);
     }
+
+    @media screen and (min-width:480px) {
+        &::before {
+            left: 60px;
+        }
+
+        &::after {
+            left: 60px;
+        }
+    }
+}
+
+.block-products {
+    padding: 124px 40px 16px;
+
+    @media screen and (min-width:480px) {
+        padding: 124px 60px 16px;
+        max-width: 320px;
+    }
+}
+
+.list-products {
+    display: flex;
+    justify-content: center;
 }
