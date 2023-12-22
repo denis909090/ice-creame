@@ -12,12 +12,14 @@
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 808px;
+    max-width: 768px;
+    padding: 0 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1240px;
+    max-width: 1200px;
+    padding: 0 16px;
   }
 }
 /*Обнуление*/
@@ -509,8 +511,28 @@ h6 {
 
 .produsts {
   padding: 60px 0;
-  background-image: url(../image/background-section.jpg);
-  background-size: contain;
+  background-image: url(../image/backgorund-section-320.webp);
+  background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .produsts {
+    background-image: url(../image/bacground-section-780.webp);
+    background-size: contain;
+    background-position: top;
+  }
+}
+@media screen and (min-width: 768px) {
+  .produsts {
+    background-image: url(../image/bacrgound-section-768.webp);
+    background-size: contain;
+    background-position: top;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .produsts {
+    background-image: url(../image/background-section-1200px.webp);
+    background-size: 1195px 1098px;
+  }
 }
 
 .title-products {
@@ -523,6 +545,17 @@ h6 {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .title-products {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-products {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
 }
 
 .name-section {
@@ -537,6 +570,24 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 148px;
 }
+@media screen and (min-width: 480px) {
+  .name-section {
+    margin-bottom: 144px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .name-section {
+    font-size: 34px;
+    letter-spacing: 1.36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .name-section {
+    font-size: 36px;
+    letter-spacing: 2.16px;
+    margin-bottom: 304px;
+  }
+}
 
 .products-block-item {
   display: -webkit-box;
@@ -547,6 +598,24 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 168px;
+}
+@media screen and (min-width: 768px) {
+  .products-block-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products-block-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 29px;
+  }
 }
 
 .title-block {
@@ -561,6 +630,19 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .title-block {
+    font-size: 22px;
+    letter-spacing: 0.88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-block {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 66px;
+  }
+}
 
 .descrp-block {
   color: #131313;
@@ -571,17 +653,31 @@ h6 {
   font-weight: 400;
   line-height: 176%;
   letter-spacing: 0.56px;
+  max-width: 200px;
+  max-height: 148px;
+}
+@media screen and (min-width: 768px) {
+  .descrp-block {
+    max-width: 172px;
+    max-height: 174px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .descrp-block {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    max-width: 242px;
+    max-height: 142px;
+  }
 }
 
 .icon-strelka {
   fill: #131313;
-  display: block;
-  margin: 100px auto 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .icon-strelka {
-    margin: 106px auto 0 auto;
-  }
+
+.btn-products {
+  background-color: transparent;
+  margin-top: auto;
 }
 
 .ice-coffee-block {
@@ -615,14 +711,39 @@ h6 {
 @media screen and (min-width: 480px) {
   .ice-coffee-block::before {
     left: 60px;
+    top: -94px;
   }
   .ice-coffee-block::after {
     left: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .ice-coffee-block::before {
+    top: -108px;
+    left: 12px;
+  }
+  .ice-coffee-block::after {
+    top: -120px;
+    left: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ice-coffee-block::before {
+    width: 302px;
+    height: 302px;
+    top: -168px;
+    left: 34px;
+  }
+  .ice-coffee-block::after {
+    background-image: url(../image/ice-coffee-desktop.webp);
+    width: 302px;
+    height: 302px;
+    top: -168px;
+    left: 34px;
+  }
+}
 
 .ice-creame-block {
-  padding: 124px 40px 16px 40px;
   border-radius: 24px;
   background: #AEC6A5;
   position: relative;
@@ -656,6 +777,31 @@ h6 {
   }
   .ice-creame-block::after {
     left: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ice-creame-block::before {
+    top: -108px;
+    left: 12px;
+  }
+  .ice-creame-block::after {
+    top: -120px;
+    left: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ice-creame-block::before {
+    top: -168px;
+    left: 34px;
+    width: 302px;
+    height: 302px;
+  }
+  .ice-creame-block::after {
+    background-image: url(../image/ice-creame-desktop.webp);
+    top: -168px;
+    left: 34px;
+    width: 302px;
+    height: 302px;
   }
 }
 
@@ -695,14 +841,55 @@ h6 {
     left: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .milkshakes::before {
+    top: -108px;
+    left: 12px;
+  }
+  .milkshakes::after {
+    top: -120px;
+    left: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .milkshakes::before {
+    top: -168px;
+    left: 34px;
+    width: 302px;
+    height: 302px;
+  }
+  .milkshakes::after {
+    top: -168px;
+    left: 34px;
+    width: 302px;
+    height: 302px;
+    background-image: url(../image/milkshakes-desktop.webp);
+  }
+}
 
 .block-products {
   padding: 124px 40px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 480px) {
   .block-products {
     padding: 124px 60px 16px;
-    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block-products {
+    padding: 108px 26px 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-products {
+    padding: 165px 64px 60px;
   }
 }
 
@@ -713,6 +900,17 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 420px;
+}
+@media screen and (min-width: 480px) {
+  .list-products {
+    height: 428px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-products {
+    height: 536px;
+  }
 }
 
 .traditions {

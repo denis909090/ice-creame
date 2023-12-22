@@ -1,9 +1,25 @@
-// .conteiner {}
-
 .produsts {
     padding: 60px 0;
-    background-image: url(../image/background-section.jpg);
-    background-size: contain;
+    background-image: url(../image/backgorund-section-320.webp);
+    background-size: cover;
+
+    @media screen and (min-width:480px) {
+        background-image: url(../image/bacground-section-780.webp);
+        background-size: contain;
+        background-position: top;
+    }
+
+    @media screen and (min-width:768px) {
+        background-image: url(../image/bacrgound-section-768.webp);
+        background-size: contain;
+        background-position: top;
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: url(../image/background-section-1200px.webp);
+        background-size: 1195px 1098px;
+    }
+
 }
 
 .title-products {
@@ -17,6 +33,15 @@
     text-transform: uppercase;
 
     margin-bottom: 12px;
+
+    @media screen and (min-width:768px) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        letter-spacing: 1.2px;
+    }
 }
 
 .name-section {
@@ -31,12 +56,37 @@
     text-transform: uppercase;
 
     margin-bottom: 148px;
+
+    @media screen and (min-width:480px) {
+        margin-bottom: 144px;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 34px;
+        letter-spacing: 1.36px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        letter-spacing: 2.16px;
+        margin-bottom: 304px;
+    }
 }
 
 .products-block-item {
     display: flex;
     flex-direction: column;
     gap: 168px;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        gap: 29px;
+    }
 }
 
 .title-block {
@@ -51,6 +101,17 @@
     text-transform: uppercase;
 
     margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        font-size: 22px;
+        letter-spacing: 0.88px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        letter-spacing: 1.2px;
+        margin-bottom: 66px;
+    }
 }
 
 .descrp-block {
@@ -62,16 +123,29 @@
     font-weight: 400;
     line-height: 176%;
     letter-spacing: 0.56px;
+    max-width: 200px;
+    max-height: 148px;
+
+    @media screen and (min-width:768px) {
+        max-width: 172px;
+        max-height: 174px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        letter-spacing: 0.64px;
+        max-width: 242px;
+        max-height: 142px;
+    }
 }
 
 .icon-strelka {
     fill: #131313;
-    display: block;
-    margin: 100px auto 0 auto;
+}
 
-    @media screen and (min-width:480px) {
-        margin: 106px auto 0 auto;
-    }
+.btn-products {
+    background-color: transparent;
+    margin-top: auto;
 }
 
 .ice-coffee-block {
@@ -106,16 +180,45 @@
     @media screen and (min-width:480px) {
         &::before {
             left: 60px;
+            top: -94px;
         }
 
         &::after {
             left: 60px;
         }
     }
+
+    @media screen and (min-width:768px) {
+        &::before {
+            top: -108px;
+            left: 12px;
+        }
+
+        &::after {
+            top: -120px;
+            left: 12px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &::before {
+            width: 302px;
+            height: 302px;
+            top: -168px;
+            left: 34px;
+        }
+
+        &::after {
+            background-image: url(../image/ice-coffee-desktop.webp);
+            width: 302px;
+            height: 302px;
+            top: -168px;
+            left: 34px;
+        }
+    }
 }
 
 .ice-creame-block {
-    padding: 124px 40px 16px 40px;
     border-radius: 24px;
     background: #AEC6A5;
 
@@ -152,6 +255,35 @@
 
         &::after {
             left: 60px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &::before {
+            top: -108px;
+            left: 12px;
+        }
+
+        &::after {
+            top: -120px;
+            left: 12px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &::before {
+            top: -168px;
+            left: 34px;
+            width: 302px;
+            height: 302px;
+        }
+
+        &::after {
+            background-image: url(../image/ice-creame-desktop.webp);
+            top: -168px;
+            left: 34px;
+            width: 302px;
+            height: 302px;
         }
     }
 }
@@ -195,18 +327,67 @@
             left: 60px;
         }
     }
+
+    @media screen and (min-width:768px) {
+        &::before {
+            top: -108px;
+            left: 12px;
+        }
+
+        &::after {
+            top: -120px;
+            left: 12px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &::before {
+            top: -168px;
+            left: 34px;
+            width: 302px;
+            height: 302px;
+        }
+
+        &::after {
+            top: -168px;
+            left: 34px;
+            width: 302px;
+            height: 302px;
+            background-image: url(../image/milkshakes-desktop.webp);
+        }
+    }
 }
 
 .block-products {
     padding: 124px 40px 16px;
+    display: flex;
+    flex-direction: column;
 
-    @media screen and (min-width:480px) {
+    @media screen and (min-width: 480px) {
         padding: 124px 60px 16px;
-        max-width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 108px 26px 12px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 165px 64px 60px;
     }
 }
 
 .list-products {
     display: flex;
     justify-content: center;
+
+    height: 420px;
+
+    @media screen and (min-width:480px) {
+        height: 428px;
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 536px;
+    }
 }
