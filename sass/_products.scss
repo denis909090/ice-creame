@@ -1,23 +1,14 @@
 .produsts {
     padding: 60px 0;
-    background-image: url(../image/backgorund-section-320.webp);
-    background-size: cover;
-
-    @media screen and (min-width:480px) {
-        background-image: url(../image/bacground-section-780.webp);
-        background-size: contain;
-        background-position: top;
-    }
+    background-image: url(../image/bacrgound_mobile.webp);
+    background-size: contain;
 
     @media screen and (min-width:768px) {
-        background-image: url(../image/bacrgound-section-768.webp);
-        background-size: contain;
-        background-position: top;
+        background-image: url(../image/background_tablet.webp);
     }
 
     @media screen and (min-width:1200px) {
-        background-image: url(../image/background-section-1200px.webp);
-        background-size: 1195px 1098px;
+        background-image: url(../image/bacground_desktop.webp);
     }
 
 }
@@ -145,7 +136,13 @@
 
 .btn-products {
     background-color: transparent;
-    margin-top: auto;
+    margin: auto auto 0;
+    width: 45px;
+
+    &:hover .icon-strelka {
+        scale: 1.2;
+        transition: scale 200ms cubic-bezier(.97, .8, .51, 1.57);
+    }
 }
 
 .ice-coffee-block {
@@ -389,5 +386,203 @@
 
     @media screen and (min-width:1200px) {
         height: 536px;
+    }
+}
+
+.backdrop {
+    width: 100%;
+    height: 354%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-products-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    // height: 200px;
+    background-color: #FCFCFC;
+    padding: 28px 20px;
+}
+
+.btn-modal-prod {
+    background-color: transparent;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.close-icon-prod {
+    width: 20px;
+    height: 20px;
+    fill: #131313;
+}
+
+.title-modal {
+    color: #131313;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
+}
+
+.block-img-chocolate {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 104px;
+        left: 74px;
+        background: url(../image/small-ice-creame.webp) lightgray 50% / cover no-repeat;
+        display: block;
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 112px;
+        left: 74px;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.70));
+        display: block;
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+    }
+}
+
+.number-prod {
+    background-color: #9CBE8F;
+    filter: drop-shadow(0px 6px 20px rgba(10, 136, 23, 0.25));
+    border-radius: 50%;
+
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    height: 44px;
+    width: 44px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-prod {
+    width: 53px;
+    height: 76px;
+    border-radius: 40px;
+    text-align: center;
+    display: block;
+    margin-top: auto;
+    border: 2px solid #9CBE8F;
+
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item-characteristic {
+    margin-top: 182px;
+    display: flex;
+    gap: 9px;
+    position: relative;
+}
+
+.descrp-prod {
+    margin-top: 8px;
+}
+
+.name-ingredients {
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.56px;
+}
+
+.title-ingredients {
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+    margin-top: 40px;
+}
+
+.block-ingredients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.name-ingredients,
+.number-ingred {
+    color: #131313;
+    text-align: start;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 176%;
+    letter-spacing: 0.56px;
+}
+
+.number-ingred {
+    text-align: end;
+}
+
+.list-name-ingred:not(:last-child),
+.list-number-ingred:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(132, 161, 120, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        transform: scale(1.5);
+        transition: transform 200ms ease-in-out;
+
+    }
+
+    &:active {
+        background-color: rgba(128, 176, 108, 0.4);
     }
 }
