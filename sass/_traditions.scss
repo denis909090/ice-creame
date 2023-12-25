@@ -239,7 +239,7 @@
 }
 
 .descrp-traditions {
-    padding-top: 340px;
+    padding-top: 370px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -247,7 +247,7 @@
     @media screen and (min-width:768px) {
         gap: 8px;
 
-        padding-top: 80px;
+        // padding-top: 80px;
         margin-left: auto;
     }
 }

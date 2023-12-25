@@ -1377,7 +1377,7 @@ h6 {
 }
 
 .descrp-traditions {
-  padding-top: 340px;
+  padding-top: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1390,7 +1390,6 @@ h6 {
 @media screen and (min-width: 768px) {
   .descrp-traditions {
     gap: 8px;
-    padding-top: 80px;
     margin-left: auto;
   }
 }
