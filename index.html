@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Знайдемо для тебе найкраще морозиво в світі!">
 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -22,78 +23,81 @@
 
 <body>
   <!-- <header class="header" id="Home">
-        <div class="conteiner header-conteiner">
-            <div class="logo">
-                <svg class="icon-logo">
-                    <use href="./image/sprite.svg#icon-Logo"></use>
-                </svg>
-            </div>
+    <div class="conteiner header-conteiner">
+      <a href="./index.html" class="logo">
+        <svg class="icon-logo">
+          <use href="./image/sprite.svg#icon-Logo"></use>
+        </svg>
+      </a>
 
-            <div class="header-navigation">
-                <nav class="nav-links">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">How it’s made?</a>
-                    <a href="#" class="nav-link">Our products</a>
-                    <a href="#" class="nav-link">Contact</a>
-                </nav>
-            </div>
+      <div class="header-navigation">
+        <nav class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">How it’s made?</a>
+          <a href="#" class="nav-link">Our products</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+      </div>
 
-            <button class="btn-burger" is-open>
-                <svg class="burger-menu" width="32" height="32">
-                    <use class="open-icon" href="./image/sprite.svg#icon-open-burger"></use>
-                    <use class="close-icon" href="./image/sprite.svg#icon-close-burger"></use>
-                </svg>
-            </button>
+      <button class="btn-burger" is-open>
+        <svg class="burger-menu" width="32" height="32">
+          <use class="open-icon" href="./image/sprite.svg#icon-open-burger"></use>
+          <use class="close-icon" href="./image/sprite.svg#icon-close-burger"></use>
+        </svg>
+      </button>
 
-            <button class="btn">
-                Buy now
-                <svg class="btn-svg" width="12" height="12">
-                    <use href="./image/sprite.svg#icon-btn-line"></use>
-                </svg>
-            </button>
-        </div>
-    </header> -->
+      <button class="btn">
+        Buy now
+        <svg class="btn-svg" width="12" height="12">
+          <use href="./image/sprite.svg#icon-btn-line"></use>
+        </svg>
+      </button>
+    </div>
+  </header> -->
   <main>
-    <!-- <section class=" hero">
-            <div class="conteiner hero-conteiner">
-                <div class="block-hero">
-                    <div class="title">
-                        <h2 class="title-p">ice cream made with <span class="content-paragraph">passion</span></h2>
-                        <div class="btn-link-hero">
-                            <button class="btn-hero">Products</button>
-                            <button class="link-hero">How it’s made?</button>
-                        </div>
-
-                        <div class="picrure-descrp">
-                            <img src="./image/many-ice-creame.png" alt="шарики морозива">
-                            <div class="descrp-ice-creame">
-                                <p class="descrp-ice">Indulge in a scoop of ice cream made with passion and
-                                    treat your taste
-                                    buds to an unforgettable experience!</p>
-                                <svg width="40" height="16">
-                                    <use href="./image/sprite.svg#icon-strelka"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="price-ice">
-                        <img class="big-peacture" src="./image/ice-creame-480.png" alt="">
-                        <div class="price-title">
-                            <div class="first-pr">
-                                <p class="price">16</p>
-                                <p class="name">cafes</p>
-                            </div>
-                            <div class="second-pr">
-                                <p class="price">23</p>
-                                <p class="name">food trucks</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class=" hero">
+      <div class="conteiner">
+        <div class="hero-wrapper">
+          <div class="block-hello-hero">
+            <p class="title-hero">ice cream made with passion</p>
+            <div class="block-btns">
+              <button class="btn-Products">Products</button>
+              <button class="btn-How-made">How it`s made</button>
             </div>
-        </section> -->
 
-    <section class="produsts">
+            <div class="block-descrp-hello-hero-wrapper">
+              <div class="img">
+                <img src="./image/many-ice-creame-768.webp" alt="">
+              </div>
+
+              <p class="descrp-img">Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+                unforgettable experience!</p>
+
+              <button>
+                <svg class="icon-arrow">
+                  <use href="./image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="block-img-price">
+            <div class="img">
+              <img src="./image/desktop.png" alt="" class="hero-img">
+            </div>
+
+            <ul>
+              <li class="numer">16</li>
+              <li class="descrp-number">cafes</li>
+              <li class="numer">23</li>
+              <li class="descrp-number">food trucks</li>
+            </ul>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- <section class="produsts">
       <div class="conteiner">
         <div class="products">
           <h4 class="title-products">100% natural</h4>
@@ -143,7 +147,7 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="backdrop is-hidden">
+     <div class="backdrop is-hidden">
         <div class="modal-products-wrapper">
           <button class="btn-modal-prod">
             <svg class="close-icon-prod">
@@ -227,23 +231,27 @@
             </ul>
           </div>
         </div>
-      </div> -->
+      </div> 
       </div>
     </section>
 
-    <section class="traditions">
+     <section class="traditions">
       <div class="conteiner">
         <div class="tradition-block">
-          <h3 class="title-tradition">tradition and love</h3>
-          <h1 class="main-title">how it’s made?</h1>
 
+          <div class="title-wrapper">
+            <h3 class="title-tradition">tradition and love</h3>
+            <h1 class="main-title">how it’s made?</h1>
+          </div>
           <div class="presentation">
             <div class="block-kow"></div>
             <div class="descrp-traditions">
-              <p class="traditional-descrp">Ice is a place where you will become not only a little happier, but also
+              <p class="traditional-descrp main-descrp">Ice is a place where you will become not only a little
+                happier, but also
                 healthier. Health is the main value for us, and
                 we follow it when creating our handmade desserts.</p>
-              <p class="traditional-descrp">We use traditional recipes and 100% natural ingredients. Our products are so
+              <p class="traditional-descrp">We use traditional recipes and 100% natural ingredients. Our products are
+                so
                 natural that they can be given to children
                 from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
                 milkshakes.
@@ -257,9 +265,8 @@
               </button>
             </div>
           </div>
-
-          <div class="icon-blocks">
-            <div class="block-repeat">
+          <ul class="icon-blocks">
+            <li class="block-repeat">
               <a class="link-icon" href="#" width="50" height="50">
                 <svg width="36" height="36">
                   <use href="./image/sprite.svg#icon-cow"></use>
@@ -267,9 +274,8 @@
               </a>
               <p class="number">721</p>
               <p class="title-block-icon-cow">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-            </div>
-
-            <div class="block-repeat">
+            </li>
+            <li class="block-repeat">
               <a class="link-icon" href="#">
                 <svg width="36" height="36">
                   <use href="./image/sprite.svg#icon-weight"></use>
@@ -277,9 +283,8 @@
               </a>
               <p class="number">16kg</p>
               <p class="title-block-icon-cow">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-            </div>
-
-            <div class="block-repeat">
+            </li>
+            <li class="block-repeat">
               <a class="link-icon" href="#">
                 <svg width="36" height="36">
                   <use href="./image/sprite.svg#icon-ice-crema"></use>
@@ -287,15 +292,10 @@
               </a>
               <p class="number">16kg</p>
               <p class="title-block-icon-cow">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-            </div>
-          </div>
-
-          <div class="img-block">
-            <img class="img" src="./image/ices.jpg" alt="">
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+    </section> -->
 
     <!-- <section class="review-section">
         <div class="reviews conteiner">

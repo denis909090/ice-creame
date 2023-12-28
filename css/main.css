@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .conteiner {
+    max-width: 440px;
+    padding: 0 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .conteiner {
     max-width: 768px;
@@ -72,6 +78,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 
 button::-moz-focus-inner {
@@ -260,248 +267,66 @@ h6 {
 }
 
 .hero {
-  background-color: #84a178;
+  background-color: #84A178;
 }
 
-.hero-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url(../image/Крапки-mobile-320.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 320px;
-  position: relative;
-}
-
-.title-p {
-  padding-top: 50px;
+.title-hero {
   color: #FCFCFC;
   font-family: "Seymour One";
-  font-size: 38px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.52px;
+  letter-spacing: 1.04px;
   text-transform: uppercase;
-  width: 367px;
-}
-@media screen and (min-width: 480px) {
-  .title-p {
-    padding-top: 40px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .title-p {
-    padding-top: 14px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .title-p {
-    padding-top: 45px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .title-p {
-    font-family: Seymour One;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.04px;
-    text-transform: uppercase;
-    width: 247px;
-  }
-  .title-p .content-paragraph {
-    display: block;
-    width: 247px;
-    font-family: "Seymour One";
-    font-size: 33px;
-    font-style: normal;
-    line-height: 96.5%;
-    text-transform: uppercase;
-  }
+  width: 247px;
 }
 
-.block-hero {
+.block-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  gap: 12px;
 }
 
-.title {
-  margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .title {
-    padding-bottom: 150px;
-  }
-}
-
-.btn-hero {
-  color: #131313;
+.btn-Products {
+  color: #000;
   text-align: center;
-  font-family: "Montserrat";
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 18px;
-  padding: 12px 34px;
-  border: none;
-  border-radius: 10px;
-  background-color: transparent;
-  outline: 3px solid #F8D24E;
+  line-height: normal;
+  border-radius: 8px;
+  outline: 2px solid #F8D24E;
+  padding: 12px 26px;
 }
-@media screen and (max-width: 1199px) {
-  .btn-hero {
-    color: #131313;
-    font-size: 12px;
-    line-height: normal;
-    padding: 11px 26px;
-  }
+.btn-Products:hover {
+  outline-color: #0A8817;
 }
 
-.btn-link-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.link-hero {
+.btn-How-made {
   color: #F8D24E;
   text-align: center;
-  font-family: "Montserrat";
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-decoration-line: underline;
-  padding: 12px 22px;
-  border: none;
-  background-color: transparent;
-  -webkit-transition: color 250ms ease;
-  transition: color 250ms ease;
 }
-.link-hero:hover {
+.btn-How-made:hover {
   color: #0A8817;
 }
-@media screen and (max-width: 1199px) {
-  .link-hero {
-    font-size: 12px;
-    padding: 7px 0 7px 6px;
-  }
-}
-
-.pescture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  margin-top: 42px;
-}
-
-.descrp-ice {
-  color: #FFF;
-  font-family: DM Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  width: 200px;
-  padding-top: 67px;
-  padding-bottom: 24px;
-}
-@media screen and (max-width: 1199px) {
-  .descrp-ice {
-    color: #FCFCFC;
-    font-family: Seymour One;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.04px;
-    text-transform: uppercase;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .picrure-descrp {
-    display: none;
-  }
-}
-
-.price-ice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.price-title {
-  text-align: end;
-  margin-top: 53px;
-}
-@media screen and (max-width: 1199px) {
-  .price-title {
-    display: none;
-  }
-}
-
-.first-pr {
-  margin-bottom: 16px;
-}
-
-.price {
-  color: #131313;
-  text-align: right;
-  font-family: Montserrat;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 1.84px;
-  text-transform: uppercase;
-  margin-bottom: 4px;
-}
-
-.name {
+.btn-How-made:focus {
   color: #FCFCFC;
-  text-align: right;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+}
+.btn-How-made:disabled {
+  color: #ABABAB;
 }
 
-.big-peacture {
-  padding-top: 31px;
-  display: block;
-}
-@media screen and (max-width: 1199px) {
-  .big-peacture {
-    padding-right: 7px;
-    padding-top: 19px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .big-peacture {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 0;
-  }
+.block-descrp-hello-hero-wrapper {
+  display: none;
 }
 
 .produsts {
@@ -1154,6 +979,32 @@ h6 {
           align-items: center;
   padding: 60px 0;
 }
+@media screen and (min-width: 480px) {
+  .tradition-block {
+    display: block;
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tradition-block {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
 
 .main-title {
   color: #FCFCFC;
@@ -1166,19 +1017,22 @@ h6 {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   width: 200px;
-  margin-bottom: 32px;
+  margin: 12px auto 32px auto;
 }
 @media screen and (min-width: 768px) {
   .main-title {
     font-size: 34px;
     letter-spacing: 2.04px;
     width: 460px;
+    margin: 12px auto 72px auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-title {
     font-size: 36px;
     letter-spacing: 2.16px;
+    margin-bottom: 82px;
   }
 }
 
@@ -1187,15 +1041,15 @@ h6 {
 }
 @media screen and (min-width: 768px) {
   .presentation {
-    width: 334px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: start;
+    gap: 38px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .presentation {
+    gap: 110px;
   }
 }
 
@@ -1228,6 +1082,7 @@ h6 {
   .block-kow::before {
     content: "";
     display: block;
+    position: relative;
     width: 330px;
     height: 330px;
   }
@@ -1238,6 +1093,18 @@ h6 {
     height: 330px;
     border-radius: 50%;
     background: url(../image/cow-tablet.webp), lightgray 0px -15.02px/100% 123.077% no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-kow::before {
+    width: 490px;
+    height: 490px;
+  }
+  .block-kow::after {
+    width: 490px;
+    height: 490px;
+    top: 38px;
+    background-image: url(../image/cow-desktop.webp);
   }
 }
 
@@ -1254,10 +1121,21 @@ h6 {
 @media screen and (min-width: 768px) {
   .traditional-descrp {
     text-align: justify;
+    max-width: 334px;
   }
 }
 @media screen and (min-width: 1200px) {
   .traditional-descrp {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 194%;
+    max-width: 464px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-descrp {
+    line-height: 176%;
     font-size: 16px;
     letter-spacing: 0.64px;
   }
@@ -1281,8 +1159,8 @@ h6 {
           align-items: center;
   border-radius: 10px;
   background-color: #F8D24E;
-  -webkit-transition: background-color 200ms ease-in, color 100ms ease-in, fill 100ms ease-in;
-  transition: background-color 200ms ease-in, color 100ms ease-in, fill 100ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
 }
 .tradition-btn:hover {
   background-color: #0A8817;
@@ -1293,6 +1171,28 @@ h6 {
 }
 .tradition-btn:disabled {
   background: #ABABAB;
+}
+@media screen and (min-width: 768px) {
+  .tradition-btn {
+    margin: 32px auto 80px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tradition-btn {
+    margin: 54px auto 146px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon-blocks {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .block-repeat {
@@ -1310,6 +1210,19 @@ h6 {
 }
 .block-repeat:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .block-repeat {
+    max-width: 152px;
+  }
+  .block-repeat:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-repeat {
+    max-width: 368px;
+  }
 }
 
 .link-icon {
@@ -1361,11 +1274,13 @@ h6 {
   font-style: normal;
   font-weight: 400;
   line-height: 170%;
+  width: 230px;
 }
 @media screen and (min-width: 768px) {
   .title-block-icon-cow {
     font-size: 14px;
     line-height: 174%;
+    width: 152px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1373,6 +1288,7 @@ h6 {
     font-size: 16px;
     line-height: 176%;
     letter-spacing: 0.32px;
+    width: 368px;
   }
 }
 
@@ -1390,7 +1306,14 @@ h6 {
 @media screen and (min-width: 768px) {
   .descrp-traditions {
     gap: 8px;
+    padding-top: 8px;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .descrp-traditions {
+    padding-top: 90px;
+    margin-left: 0;
   }
 }
 
