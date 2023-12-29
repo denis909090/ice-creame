@@ -6,7 +6,12 @@ footer {
 .item-contacts {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 
 .list-contacts {
@@ -17,8 +22,13 @@ footer {
 
   padding: 40px 32px 24px 32px;
 
-  @include nw(type) {
+  @media screen and (min-width: 768px) {
     width: 224px;
+    padding: 40px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
   }
 }
 
@@ -42,6 +52,9 @@ footer {
     font-size: 16px;
     letter-spacing: 0.64px;
     line-height: 140%;
+    margin-bottom: 32px;
+    padding: 4px 14px;
+    border-radius: 6px;
   }
 }
 
@@ -59,6 +72,20 @@ footer {
   line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+
+    margin-bottom: 8px;
+  }
 }
 
 .address {
@@ -69,7 +96,25 @@ footer {
   font-weight: 500;
   line-height: 183%;
   letter-spacing: 0.48px;
-  padding-bottom: 24px;
+
+  display: block;
+  margin-bottom: 24px;
+
+  &:hover {
+    text-decoration: 2px underline #d6936d;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
 }
 
 .block-days {
@@ -84,6 +129,18 @@ footer {
   line-height: 186%;
   &.main-day {
     padding-top: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    &.main-day {
+      padding-top: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
   }
 }
 
@@ -101,6 +158,23 @@ footer {
   &.second-time {
     padding-bottom: 24px;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    color: #907e82;
+
+    &.second-time {
+      padding-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+
+    &.main-time {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .block-contact {
@@ -116,6 +190,15 @@ footer {
 
   padding-top: 24px;
   margin-bottom: 6px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .mail-address {
@@ -125,4 +208,90 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.block-btns-footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: max-content;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-footer {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+
+  background-color: #f8d24e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  padding: 12px 40px;
+
+  transition: background-color 200ms ease-in-out, outline-color 200ms ease-in-out;
+
+  &:hover {
+    background-color: #0A8817;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+
+    & .icon-btns-footer {
+      fill: #fcfcfc;
+    }
+  }
+
+  &:disabled {
+    background-color: #ABABAB;
+  }
+
+  &.franchise {
+    padding: 12px 55px;
+    border-radius: 10px;
+    outline: 2px solid #f8d24e;
+
+    background-color: transparent;
+
+    &:hover {
+      outline-color: #0A8817;
+    }
+
+    &:focus {
+      color: #fff;
+      outline-color: #0A8817;
+    }
+
+    &:disabled {
+      outline-color: #ABABAB;
+    }
+  }
+}
+
+.btn-footer {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.icon-btns-footer {
 }
