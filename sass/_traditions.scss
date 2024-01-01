@@ -35,13 +35,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
+    padding: 60px 0 68px;
 
     @media screen and (min-width:480px) {
         display: block;
         width: 280px;
         margin-right: auto;
         margin-left: auto;
+        padding: 60px 0 82px;
     }
 
     @media screen and (min-width:768px) {
@@ -51,6 +52,11 @@
         align-items: center;
 
         width: 100%;
+        padding: 60px 0 204px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 60px 0 178px;
     }
 }
 

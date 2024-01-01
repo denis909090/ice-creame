@@ -20,14 +20,39 @@
 .conteiner {
 }
 
-.review-section {
+.block-for-slider {
   position: relative;
 }
 
 .img-slider {
   position: absolute;
-  top: 0;
+  top: -204px;
   left: auto;
+
+  @media screen and (min-width: 480px) {
+    top: -274px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: -390px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -542px;
+    left: 7%;
+  }
+}
+
+.peacture-slider {
+  border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
 }
 
 .block-human-img {
@@ -80,7 +105,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 186%;
-//   margin-top: 32px;
+  //   margin-top: 32px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
