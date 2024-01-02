@@ -17,7 +17,7 @@ const cmdTop = document.querySelector('.scroll-to-top');
 
 if (cmdTop) {
   cmdTop.addEventListener ('click', click, false);
-  cmdTop.addEventListener ('touchstart', click, false);
+  cmdTop.addEventListener ('touchend', click, false);
 }
 
 function click(event) {
