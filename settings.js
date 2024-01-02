@@ -16,8 +16,12 @@
 const cmdTop = document.querySelector('.scroll-to-top');
 
 if (cmdTop) {
-  cmdTop.addEventListener ('click', function(event){
-    event.preventDefault();
+  cmdTop.addEventListener ('click', click, false);
+  cmdTop.addEventListener ('touchstart', click, false);
+}
+
+function click(event) {
+  event.preventDefault();
 
     const targetId = this.getAttribute("href");
     const targetElement = document.querySelector(targetId);
@@ -25,7 +29,6 @@ if (cmdTop) {
     if (targetElement) { 
       targetElement.scrollIntoView({ behavior: "smooth", });
     }
-  })
 }
 
 
