@@ -8,14 +8,16 @@
   width: 280px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 70%;
+    transform: translate(-50%, -70%);
   border-radius: 10px;
   outline: 2px solid #f8d24e;
   background-color: #fcfcfc;
 //   margin-top: 230px;
 
   @media screen and (min-width: 768px) {
+    top: 50%;
+    transform: translate(-50%, -50%);
     margin-top: 0;
     padding: 32px 54px;
     width: 568px;
