@@ -25,7 +25,7 @@
     </svg>
   </a>
 
-  <!-- <header class="header" id="Home">
+  <header class="header" id="Home">
     <div class="conteiner header-conteiner">
       <a href="./index.html" class="logo">
         <svg class="icon-logo">
@@ -55,40 +55,81 @@
           <use href="./image/sprite.svg#icon-btn-line"></use>
         </svg>
       </button>
+
+      <div class="backdrop">
+        <div class="modal-buy-wrapper">
+          <div class="modal-window">
+            <button type="button" class="bnt-close">
+              <svg class="close-icon" width="20" height="20">
+                <use href="./image/sprite.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+
+            <h3 class="title-modal-window">Buy now</h3>
+            <ul class="item-blocks-modal">
+              <li class="list-products-modal">
+                <div class="block-ice-creame blocks">
+                  <p class="title-block-modal">Ice-creame</p>
+                </div>
+              </li>
+              <li class="list-products-modal">
+                <div class="block-ice-coffee blocks">
+                  <p class="title-block-modal">Ice-creame</p>
+                </div>
+              </li>
+              <li class="list-products-modal">
+                <div class="block-milkshake blocks">
+                  <p class="title-block-modal">Ice-creame</p>
+                </div>
+              </li>
+            </ul>
+
+            <form class="modal-form-buy">
+              <input class="input-modal-buy" autofocus placeholder="Name" type="text" id="user-name" name="username" />
+              <input class="input-modal-buy" autofocus placeholder="Phone" type="tel" id="user-phone"
+                name="userphone" />
+              <textarea name="usercomment" placeholder="Comment" class="comment-buy-now"></textarea>
+            </form>
+            <button class="btn-submit-buy" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </header> -->
+  </header>
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="conteiner">
         <div class="hero-wrapper">
           <div class="block-hello-hero">
             <p class="title-hero">ice cream made with <span class="passion">passion</span></p>
             <div class="block-btns">
-              <button class="btn-Products">Products</button>
-              <button class="btn-How-made">How it`s made</button>
+              <a class="btn-Products">Products</a>
+              <a class="btn-How-made">How it`s made</a>
             </div>
 
             <div class="block-descrp-hello-hero-wrapper">
               <div class="img">
-                <img srcset="
-
-                image\many-ice-creame.png 225w, 100vw" sizes="(min-width:1200px) 225px, (min-width:768px) 152px"
-                  class="img-many-ice-creame" src="./image/many-ice-creame-768.webp" alt="">
+                <img width="152px" height="152px" srcset="
+                image\many-ice-creame.png 225w" sizes="
+                (min-width:1200px) 225px, 
+                (min-width:768px) 152px" class="img-many-ice-creame" src="./image/many-ice-creame-768.webp" alt="">
               </div>
 
-              <p class="descrp-img">Indulge in a scoop of ice cream made with passion and treat your taste buds to an
-                unforgettable experience!</p>
+              <div class="block-hero-descrp">
+                <p class="descrp-img">Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+                  unforgettable experience!</p>
 
-              <button>
-                <svg class="icon-arrow">
-                  <use href="./image/sprite.svg#icon-arrow"></use>
-                </svg>
-              </button>
+                <a href="#products" class="btn-arrow">
+                  <svg class="icon-arrow" width="40" height="16">
+                    <use href="./image/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="block-img-price">
-            <div class="img">
+            <div class="block-img">
               <img srcset="
               image\w\hero-ice-creame_320.png 177w,
               image\w\hero-ice-creame_480.png 218w,
@@ -109,9 +150,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="products">
+    <!--
+
+    <section id="products" class="products">
       <div class="conteiner">
         <div class="">
           <h4 class="title-products">100% natural</h4>
@@ -393,9 +436,9 @@
       <p class="descrp-security">&copy; 2022 - IceCream. All Rights Reserved.</p>
     </div>
 
-  </footer>
+  </footer> -->
 
-  <script src="./settings.js"></script>
+    <script src="./settings.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,270 @@
+.modal-buy-wrapper {
+}
+.modal-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px;
+  width: 280px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  outline: 2px solid #f8d24e;
+  background-color: #fcfcfc;
+//   margin-top: 230px;
+
+  @media screen and (min-width: 768px) {
+    // margin-top: 0;
+    padding: 32px 54px;
+    width: 568px;
+  }
+}
+
+.modal-form-buy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bnt-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.user-name {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.input-modal-buy {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background-color: rgba(248, 210, 78, 0.1);
+  position: relative;
+  width: 224px;
+
+  &::placeholder {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 16px;
+    width: 368px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.comment-buy-now {
+  width: 224px;
+  height: 65px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    padding: 12px 16px;
+  }
+}
+
+.btn-submit-buy {
+  margin-top: 26px;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  padding: 12px 34px;
+  width: max-content;
+  transition: background-color 200ms ease-in-out;
+
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    font-size: 14px;
+    margin-top: 32px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                              MODAL-FORM FINISHED                           */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                ITEM-PROSUCTS                               */
+/* -------------------------------------------------------------------------- */
+
+.blocks {
+  width: 132px;
+  height: 136px;
+  padding: 90px 13px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 96px 16px 20px;
+  }
+}
+
+.block-ice-creame {
+  border-radius: 15px;
+  outline: 2px solid #96af8c;
+  box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7) 0%,
+        rgba(156, 190, 143, 0.7) 100%
+      ),
+      #d9d9d9;
+    filter: drop-shadow(0px 5.26px 19.726px rgba(10, 136, 23, 0.25));
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-image: url(../image/ice-creame-modal.jpg);
+  }
+}
+
+.block-ice-coffee {
+  border-radius: 15px;
+  border: 2px solid #efd478;
+  background-color: #efd478;
+  box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7) 0%,
+        rgba(248, 210, 78, 0.7) 100%
+      ),
+      #d9d9d9;
+    filter: drop-shadow(0px 5.26px 19.726px rgba(153, 114, 23, 0.25));
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    background-image: url(../image/ice-coffee-modal.jpg);
+    border-radius: 50%;
+  }
+}
+
+.block-milkshake {
+  border-radius: 15.781px;
+  border: 2px solid #d6936d;
+  box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7) 0%,
+        rgba(213, 117, 63, 0.7) 100%
+      ),
+      #d9d9d9;
+    filter: drop-shadow(0px 5.26px 19.726px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    background-image: url(../image/milshake-modal.jpg);
+    border-radius: 50%;
+  }
+}
+
+.title-block-modal {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.title-modal-window {
+  color: #131313;
+  text-align: center;
+  font-family: "Seymour One";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 84px;
+}
+
+.item-blocks-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
