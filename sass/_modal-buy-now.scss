@@ -16,7 +16,7 @@
 //   margin-top: 230px;
 
   @media screen and (min-width: 768px) {
-    // margin-top: 0;
+    margin-top: 0;
     padding: 32px 54px;
     width: 568px;
   }
@@ -243,6 +243,7 @@ textarea {
   line-height: normal;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+  width: 100px;
 }
 
 .title-modal-window {
