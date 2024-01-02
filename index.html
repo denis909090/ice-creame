@@ -9,10 +9,6 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=DM+Sans:opsz@9..40&family=Gabarito:wght@400;550;700;900&family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
-    rel="stylesheet" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,6 +18,13 @@
 </head>
 
 <body>
+  <a id="top"></a>
+  <a href="#top" class="scroll-to-top" id="Home">
+    <svg class="icon-scroll" width="14" height="14">
+      <use href="./image/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+
   <!-- <header class="header" id="Home">
     <div class="conteiner header-conteiner">
       <a href="./index.html" class="logo">
@@ -55,11 +58,11 @@
     </div>
   </header> -->
   <main>
-    <!-- <section class=" hero">
+    <section class="hero">
       <div class="conteiner">
         <div class="hero-wrapper">
           <div class="block-hello-hero">
-            <p class="title-hero">ice cream made with passion</p>
+            <p class="title-hero">ice cream made with <span class="passion">passion</span></p>
             <div class="block-btns">
               <button class="btn-Products">Products</button>
               <button class="btn-How-made">How it`s made</button>
@@ -67,7 +70,10 @@
 
             <div class="block-descrp-hello-hero-wrapper">
               <div class="img">
-                <img src="./image/many-ice-creame-768.webp" alt="">
+                <img srcset="
+
+                image\many-ice-creame.png 225w, 100vw" sizes="(min-width:1200px) 225px, (min-width:768px) 152px"
+                  class="img-many-ice-creame" src="./image/many-ice-creame-768.webp" alt="">
               </div>
 
               <p class="descrp-img">Indulge in a scoop of ice cream made with passion and treat your taste buds to an
@@ -83,19 +89,27 @@
 
           <div class="block-img-price">
             <div class="img">
-              <img src="./image/desktop.png" alt="" class="hero-img">
+              <img srcset="
+              image\w\hero-ice-creame_320.png 177w,
+              image\w\hero-ice-creame_480.png 218w,
+              image\w\hero-ice-creame_768.png 268w,
+              image\w\hero-ice-creame_1200.png 456w, 100vw
+              " sizes="(min-width:1200px) 456px,
+              (min-width:768px) 268px,
+              (min-width:480px) 218px,
+              (min-width:320px) 177px" src="" alt="" class="hero-img">
             </div>
 
-            <ul>
+            <ul class="item-price">
               <li class="numer">16</li>
               <li class="descrp-number">cafes</li>
               <li class="numer">23</li>
               <li class="descrp-number">food trucks</li>
             </ul>
           </div>
+        </div>
       </div>
-      </div>
-    </section> -->
+    </section>
 
     <section class="products">
       <div class="conteiner">
@@ -381,11 +395,7 @@
 
   </footer>
 
-  <!-- <button class="scroll-to-top" type="submit" id="Home">
-    <svg class="icon-scroll" width="14" height="14">
-      <use href="./image/sprite.svg#icon-arrow-up"></use>
-    </svg>
-  </button> -->
+  <script src="./settings.js"></script>
 </body>
 
 </html>

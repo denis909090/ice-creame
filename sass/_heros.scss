@@ -1,84 +1,214 @@
 .hero {
-    background-color: #84A178;
+  background-color: #84a178;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../image/many-320.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @media screen and (min-width: 480px) {
+    background-image: url(../image/many-480.png);
+    background-position: bottom;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../image/many-768.png);
+    background-position: bottom;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../image/many-1200.png);
+  }
 }
 
-.hero-wrapper {}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
 
-.block-hello-hero {}
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
 
-.title-hero {
-    color: #FCFCFC;
-    font-family: 'Seymour One';
-    font-size: 26px;
+.block-hello-hero {
+}
+
+.passion {
+  color: #fcfcfc;
+  font-family: "Seymour One";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    color: #fcfcfc;
+    font-family: "Seymour One";
+    font-size: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.04px;
+    letter-spacing: 1.52px;
     text-transform: uppercase;
+  }
+}
 
-    width: 247px;
+.title-hero {
+  color: #fcfcfc;
+  font-family: "Seymour One";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+
+  width: 247px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 96.5%;
+    font-size: 34px;
+
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    letter-spacing: 1.52px;
+    margin-bottom: 28px;
+  }
 }
 
 .block-btns {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .btn-Products {
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 8px;
-    outline: 2px solid #F8D24E;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  outline: 2px solid #f8d24e;
 
-    padding: 12px 26px;
+  padding: 12px 26px;
 
-    &:hover {
-        outline-color: #0A8817;
-    }
+  &:hover {
+    outline-color: #0a8817;
+  }
 }
 
 .btn-How-made {
-    color: #F8D24E;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration-line: underline;
+  color: #f8d24e;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
 
-    &:hover {
-        color: #0A8817;
-    }
+  &:hover {
+    color: #0a8817;
+  }
 
-    &:focus {
-        color: #FCFCFC;
-    }
+  &:focus {
+    color: #fcfcfc;
+  }
 
-    &:disabled {
-        color: #ABABAB;
-    }
+  &:disabled {
+    color: #ababab;
+  }
 }
 
 .block-descrp-hello-hero-wrapper {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
-.block-img-price {}
+.block-img-price {
+  display: flex;
+  margin-left: 64px;
 
-.descrp-img {}
+  @media screen and (min-width: 480px) {
+    margin-left: 222px;
+  }
 
-.icon-arrow {}
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
 
-.block-img-price {}
+.img-many-ice-creame {
+  border-radius: 90%;
+}
 
-.hero-img {}
+.descrp-img {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
 
-.numer {}
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
 
-.descrp-number {}
+.icon-arrow {
+}
+
+.block-img-price {
+}
+
+.hero-img {
+}
+
+.item-price {
+  display: none;
+  text-align: right;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.numer {
+  color: #131313;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    letter-spacing: 1.84px;
+  }
+}
+
+.descrp-number {
+  color: #fcfcfc;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}

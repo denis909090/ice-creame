@@ -1,25 +1,26 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
 .conteiner {
-  max-width: 320px;
+  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    max-width: 480px;
+    width: 480px;
     padding: 0 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    width: 768px;
     padding: 0 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    width: 1200px;
     padding: 0 16px;
   }
 }
@@ -267,11 +268,78 @@ h6 {
 }
 
 .hero {
-  background-color: #84A178;
+  background-color: #84a178;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../image/many-320.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: url(../image/many-480.png);
+    background-position: bottom;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../image/many-768.png);
+    background-position: bottom;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../image/many-1200.png);
+  }
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.passion {
+  color: #fcfcfc;
+  font-family: "Seymour One";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .passion {
+    color: #fcfcfc;
+    font-family: "Seymour One";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+  }
 }
 
 .title-hero {
-  color: #FCFCFC;
+  color: #fcfcfc;
   font-family: "Seymour One";
   font-size: 26px;
   font-style: normal;
@@ -280,6 +348,22 @@ h6 {
   letter-spacing: 1.04px;
   text-transform: uppercase;
   width: 247px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .title-hero {
+    font-size: 34px;
+    line-height: 96.5%;
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-hero {
+    font-size: 26px;
+    letter-spacing: 1.52px;
+    margin-bottom: 28px;
+  }
 }
 
 .block-btns {
@@ -287,6 +371,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  margin-bottom: 18px;
 }
 
 .btn-Products {
@@ -298,15 +383,15 @@ h6 {
   font-weight: 600;
   line-height: normal;
   border-radius: 8px;
-  outline: 2px solid #F8D24E;
+  outline: 2px solid #f8d24e;
   padding: 12px 26px;
 }
 .btn-Products:hover {
-  outline-color: #0A8817;
+  outline-color: #0a8817;
 }
 
 .btn-How-made {
-  color: #F8D24E;
+  color: #f8d24e;
   text-align: center;
   font-family: Montserrat;
   font-size: 12px;
@@ -316,17 +401,100 @@ h6 {
   text-decoration-line: underline;
 }
 .btn-How-made:hover {
-  color: #0A8817;
+  color: #0a8817;
 }
 .btn-How-made:focus {
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 .btn-How-made:disabled {
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .block-descrp-hello-hero-wrapper {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .block-descrp-hello-hero-wrapper {
+    display: block;
+  }
+}
+
+.block-img-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 64px;
+}
+@media screen and (min-width: 480px) {
+  .block-img-price {
+    margin-left: 222px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block-img-price {
+    margin-left: 0;
+  }
+}
+
+.img-many-ice-creame {
+  border-radius: 90%;
+}
+
+.descrp-img {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media screen and (min-width: 1200px) {
+  .descrp-img {
+    font-size: 12px;
+  }
+}
+
+.item-price {
+  display: none;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .item-price {
+    display: block;
+  }
+}
+
+.numer {
+  color: #131313;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .numer {
+    font-size: 46px;
+    letter-spacing: 1.84px;
+  }
+}
+
+.descrp-number {
+  color: #fcfcfc;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 1200px) {
+  .descrp-number {
+    font-size: 14px;
+  }
 }
 
 .products {
@@ -1789,4 +1957,30 @@ footer {
     font-size: 12px;
     letter-spacing: 0.24px;
   }
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 5;
+  padding: 10px;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+.scroll-to-top.show {
+  display: block;
+}
+.scroll-to-top:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */
